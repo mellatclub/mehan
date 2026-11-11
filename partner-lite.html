@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>مهان — پنل سبک شریک (پیوند یکبارمصرف)</title>
+<style>
+@font-face{font-family:"Vazirmatn";src:url("fonts/Vazirmatn-Regular.ttf")}
+@font-face{font-family:"Vazirmatn";src:url("fonts/Vazirmatn-Bold.ttf");font-weight:700}
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:"Vazirmatn",Tahoma;color:#F5F2EA;background:#0B0B0E;min-height:100vh}
+.wrap{max-width:480px;margin:0 auto;min-height:100vh;background:#111114;border-inline:1px solid #232326;padding:0 0 40px}
+.head{padding:16px 18px;border-bottom:1px solid #232326;display:flex;justify-content:space-between;align-items:center}
+.head b{font-size:15px}.head small{display:block;font-size:10.5px;color:#B9B4A8;font-weight:400}
+.badge{font-size:10.5px;background:#1E2A22;color:#4ade80;border:1px solid #4ade80;padding:6px 12px;border-radius:20px}
+.hero{margin:14px 16px;background:#17171B;border:1px solid #2A2A30;border-radius:16px;padding:14px}
+.hero h2{font-size:14px}.hero p{font-size:11.5px;color:#B9B4A8;margin-top:6px;line-height:2}
+.kv{display:flex;justify-content:space-between;font-size:12px;padding:9px 0;border-bottom:1px dashed rgba(255,255,255,.12)}
+.kv span{color:#B9B4A8}.kv b{font-family:Arial}
+.cover{margin:12px 16px;background:rgba(74,222,128,.07);border:1px solid rgba(74,222,128,.35);border-radius:14px;padding:12px 14px;font-size:12px;line-height:2}
+.cover b{color:#4ade80}
+.note{margin:10px 16px;font-size:11px;color:#B9B4A8;line-height:2;background:#141417;border:1px solid #26262B;border-radius:12px;padding:10px 12px}
+.field{margin:12px 16px}.field label{display:block;font-size:12px;color:#CFC9BB;margin-bottom:6px}
+.field input{width:100%;background:#1A1A1E;border:1px solid #2A2A30;border-radius:12px;padding:13px;font-family:inherit;font-size:15px;color:#fff;text-align:center;letter-spacing:1px}
+.row{display:flex;gap:8px;margin:14px 16px}
+button{flex:1;padding:14px;border-radius:14px;font-family:inherit;font-size:14px;font-weight:700;cursor:pointer;border:none}
+.ok{background:linear-gradient(135deg,#F6E27A,#C9A227);color:#141005}
+.no{background:transparent;border:1px solid #444;color:#D9D4C7}
+.channels{margin:16px;font-size:11.5px;line-height:2.1;color:#CFC9BB;background:#141417;border:1px solid #26262B;border-radius:14px;padding:12px 14px}
+.channels b{color:#fff}
+.foot{margin:14px 16px;font-size:10.5px;color:#8E8A7E;line-height:2;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="head"><div><b>پنل سبک شریک مهان</b><small>پیوند یکبارمصرف • بدون نصب • انقضای ۲۴ ساعته</small></div><div class="badge">● درخواست جدید</div></div>
+<div class="hero">
+<h2>رزرو میز دونفره — جمعه شب، ساعت ۲۰</h2>
+<p>کد رزرو: <b style="font-family:Arial">MHN-90455</b> • مهمان: ۲ نفر • ارائه‌دهنده: رستوران شما<br>درخواست از دستیار اختصاصی مهان • امروز ۱۴:۳۲</p>
+<div class="kv"><span>نام عضو (جهت پذیرش)</span><b style="font-family:inherit">آقای کریمی + ۱ همراه</b></div>
+<div class="kv"><span>شناسه یکتا</span><b>MHN-90455</b></div>
+<div class="kv"><span>اعتبار کلی عضو</span><b style="font-family:inherit">— نمایش داده نمی‌شود —</b></div>
+</div>
+<div class="cover">قابل پوشش توسط مهان برای <b>این خدمت: تأیید می‌شود</b><br>مابه‌التفاوت پرداختی مهمان (در صورت وجود) را در کادر زیر ثبت کنید. کل مانده عضو به شما نمایش داده نمی‌شود.</div>
+<div class="field"><label>مبلغ نهایی خدمت (تومان) — طبق قیمت‌نامه پیوست ۱</label><input inputmode="numeric" placeholder="مثلاً ۸٬۰۰۰٬۰۰۰"></div>
+<div class="field"><label>مبلغ پرداختی مهمان در محل (اگر بیشتر از پوشش است، وگرنه خالی)</label><input inputmode="numeric" placeholder="۰"></div>
+<div class="row"><button class="no" onclick="alert('علت رد ثبت شد و به دستیار اعلام می‌شود.')">رد با علت</button><button class="ok" onclick="ok()">تأیید و ثبت ارائه</button></div>
+<div class="note">با تأیید، شناسه یکتای همین درخواست در هسته مرکزی ثبت می‌شود. تسویه هفتگی (شنبه تا جمعه) حداکثر ۳ روز کاری بعد انجام می‌شود. صورتحساب کارمزد جدا صادر می‌شود. از اعلام هرگونه مبلغ یا مانده به مهمان خودداری کنید؛ پیام کمبود پوشش را فقط دستیار اختصاصی می‌دهد.</div>
+<div class="channels"><b>چرا بدون نصب؟ — مدل چهارکاناله مهان</b><br>۱) پرتال کامل برای پرترددها &nbsp; ۲) همین پیوند یکبارمصرف برای کم‌مراجعه‌ها (پیش‌فرض شما) &nbsp; ۳) دستیارمحور بدون هیچ ابزار (تأیید تلفنی + ثبت نیابتی) &nbsp; ۴) رابط سیستمی برای زنجیره‌ها. تغییر کانال با اعلام ۷ روزه ممکن است.</div>
+<div class="foot">مهان • خدمات ممتاز بانک ملت — مجری: شرکت مهندسی نرم‌افزار شقایق<br>این صفحه نمایشی است و تراکنش واقعی ثبت نمی‌کند.</div>
+</div>
+<script>function ok(){alert('ثبت شد. رسید سامانه برای شما پیامک می‌شود و در تسویه هفتگی لحاظ می‌گردد.')}</script>
+</body>
+</html>
